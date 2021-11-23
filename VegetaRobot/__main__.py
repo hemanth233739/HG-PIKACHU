@@ -77,9 +77,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───『[Vegeta The Robot](https://telegra.ph/file/0c48783bf8a446a82b30d.jpg)』───
+ ───『[⚡Ꭾɪᴋᴀᴄʜᴜ⚡](https://telegra.ph/file/71a86e38a0cfb06fb8c9b.jpg)』───
 Hello! User,👋
-I am *Vegeta*
+I am *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
 ┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
@@ -90,21 +90,21 @@ buttons = [
     [
         InlineKeyboardButton(
                             text="➕ Add Me ➕",
-                            url="t.me/VegetaRobot?startgroup=true"),
+                            url="t.me/HG_PIKACHU_BOT?startgroup=true"),
                        InlineKeyboardButton(text="❤Bot Support", url="t.me/vegetaSupport"),
                     ],
                    [
-                       InlineKeyboardButton(text="🔐 Help ", callback_data="help_back"),
-                       InlineKeyboardButton(text="📊 Network", url="t.me/pegasusXteam"),
-                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
+                       InlineKeyboardButton(text="👻 Help 👻 ", callback_data="help_back"),
+                       InlineKeyboardButton(text="MY FRIEND 🤗", url="t.me/HG_FREE_BOT"),
+                       InlineKeyboardButton(text="❗Logs❗", url="t.me/hgbotslogs"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🗯 Support",
+                             text="🔥 Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/PegasusUpdates"
+                             text="🛠️ Updates",
+                             url="https://t.me/hgbotsupdates"
          ),
     ],
 ] 
@@ -125,9 +125,9 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """Contact to **@PegasusSupportofficial**"""
-HELP_IMG= "https://telegra.ph/file/9d2c6e3b28afe7619856e.jpg"
-GROUPSTART_IMG= "https://telegra.ph/file/374d0887609fc70e093bd.mp4"
+DONATE_STRING = """Contact to **@hgbotsupportgroup**"""
+HELP_IMG= "https://telegra.ph/file/e39179d137f54eed83d12.jpg"
+GROUPSTART_IMG= "https://telegra.ph/file/71a86e38a0cfb06fb8c9b.jpg"
 
 
 
@@ -142,7 +142,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("VegetaRobot.modules." + module_name)
+    imported_module = importlib.import_module("⚡Ꭾɪᴋᴀᴄʜᴜ⚡.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -239,7 +239,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
-            GROUPSTART_IMG, caption= "*hey {},*\n*Vegeta Here For You*\n*I'm Working* : {} ".format(
+            GROUPSTART_IMG, caption= "*hey {},*\n*⚡Ꭾɪᴋᴀᴄʜᴜ⚡ Here For You*\n*I'm Working* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -247,7 +247,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [
                   InlineKeyboardButton(text=" Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text=" Updates ", url=f"t.me/pegasusUpdates"),
+                  InlineKeyboardButton(text=" Updates ", url=f"t.me/hgbotsupdates"),
                   ]
                 ]
             ),
@@ -326,7 +326,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Powered by @VegetaRobot\nHere is the help for the *{}* module:\n".format(
+                "Powered by @HG_PIKACHU_BOT\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -681,7 +681,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@VegetaSupport","[Back Online (:](https://telegra.ph/file/d3db0babad0d1729c5f59.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@HG_PIKACHU_BOT","[Back Online⚡ (:](https://telegra.ph/file/e39179d137f54eed83d12.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
