@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
                             text="➕ Add Me ➕",
                             url="t.me/HG_PIKACHU_BOT?startgroup=true"),
-                       InlineKeyboardButton(text="❤Bot Support", url="t.me/vegetaSupport"),
+                       InlineKeyboardButton(text="💻MY MASTER💻", url="t.me/HEMANTHGAMING1K"),
                     ],
                    [
                        InlineKeyboardButton(text="👻 Help 👻 ", callback_data="help_back"),
