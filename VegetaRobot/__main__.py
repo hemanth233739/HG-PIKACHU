@@ -116,8 +116,8 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @PegasusSupportOfficial.
-All commands can be used with the following: [(/),(!),(?),(.),(~)](https://telegra.ph/file/561fa547f3c4940c95ddf.jpg)
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @hgbotsupportgroup.
+All commands can be used with the following: [(/),(!),(?),(.),(~)](https://telegra.ph/file/0e680cd266a1c05f4eef2.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
