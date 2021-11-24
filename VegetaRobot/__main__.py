@@ -110,7 +110,7 @@ buttons = [
 ] 
 
 HELP_STRINGS = """
-Hey there, I'm *Vegeta*!
+Hey there, I'm *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*!
 To make me functional, make sure that i have enough rights in your group.
 Helpful commands:
 - /start: Starts me! You've probably already used this.
