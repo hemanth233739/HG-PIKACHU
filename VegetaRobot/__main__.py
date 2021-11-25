@@ -126,7 +126,7 @@ List of all the Modules:
 
 HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """Contact to **@hgbotsupportgroup**"""
-HELP_IMG= "https://telegra.ph/file/e39179d137f54eed83d12.jpg"
+HELP_IMG= "https://telegra.ph/file/cea0d5455433770ffad12.jpg"
 GROUPSTART_IMG= "https://telegra.ph/file/4c472e1bf6b0b2b5d9d48.jpg"
 
 
