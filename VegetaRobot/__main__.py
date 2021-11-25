@@ -127,7 +127,7 @@ List of all the Modules:
 HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """Contact to **@hgbotsupportgroup**"""
 HELP_IMG= "https://telegra.ph/file/e39179d137f54eed83d12.jpg"
-GROUPSTART_IMG= "https://telegra.ph/file/2adde19bb822a37c9988c.jpg"
+GROUPSTART_IMG= "https://telegra.ph/file/4c472e1bf6b0b2b5d9d48.jpg"
 
 
 
@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         first_name = update.effective_user.first_name
-        update.effective_message.reply_video(
+        update.effective_message.reply_photo(
             GROUPSTART_IMG, caption= "*hey {},*\n*⚡Ꭾɪᴋᴀᴄʜᴜ⚡ Here For You*\n*I'm Working* : {} ".format(
              first_name,uptime
             ),
