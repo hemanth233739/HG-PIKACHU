@@ -91,19 +91,19 @@ buttons = [
         InlineKeyboardButton(
                             text="➕ Add Me ➕",
                             url="t.me/HG_PIKACHU_BOT?startgroup=true"),
-                       InlineKeyboardButton(text="💻MY MASTER💻", url="t.me/HEMANTHGAMING1K"),
+                       InlineKeyboardButton(text="🕊🇲 🇾 🇲 🇦 🇸 🇹 🇪 🇷 🕊", url="t.me/HEMANTHGAMING1K"),
                     ],
                    [
-                       InlineKeyboardButton(text="👻 Help 👻 ", callback_data="help_back"),
-                       InlineKeyboardButton(text="MY FRIEND 🤗", url="t.me/HG_FREE_BOT"),
-                       InlineKeyboardButton(text="❗Logs❗", url="t.me/hgbotslogs"),
+                       InlineKeyboardButton(text="👻ʜᴇʟᴘ👻 ", callback_data="help_back"),
+                       InlineKeyboardButton(text="ᴍʏ  ғʀɪᴇɴᴅ🥳", url="t.me/HG_FREE_BOT"),
+                       InlineKeyboardButton(text="❕ʟᴏɢs❕", url="t.me/hgbotslogs"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🔥 Support",
+                             text="❤️sᴜᴘᴘᴏʀᴛ",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="🛠️ Updates",
+                             text="🛠️  ᴜᴘᴅᴀᴛᴇs  🛠️",
                              url="https://t.me/hgbotsupdates"
          ),
     ],
