@@ -4,8 +4,8 @@ from VegetaRobot import dispatcher
 from VegetaRobot.modules.sql import BASE, SESSION
 import threading
 
-from TGNRobot import dispatcher
-from TGNRobot.modules.sql import BASE, SESSION
+from VegetaRobot import dispatcher
+from VegetaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
