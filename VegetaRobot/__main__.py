@@ -84,8 +84,8 @@ PM_START_TEXT = """
 
 *Hello! User,👋! {},*
 
-┣ ₪ *Uptime:* {}
-┣ ₪ {} *users, across* {} *chats.*
+┣ ₪ *Uptime:* ``{}``
+┣ ₪ ``{}`` *users, across* ``{}`` *chats.*
 
 I am *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
