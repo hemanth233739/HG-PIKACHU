@@ -78,6 +78,9 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
+# for start module 
+if "TheTelegrampro" in playstore:
+       pass
 
 PM_START_TEXT = """
  ───『[⚡Ꭾɪᴋᴀᴄʜᴜ⚡](https://telegra.ph/file/71a86e38a0cfb06fb8c9b.jpg)』───
@@ -289,13 +292,7 @@ def error_handler(update, context):
     # Finally, send the message
     context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
 
-# for start module 
-if "TheTelegrampro" in playstore:
-       pass
 
-    else: 
-       await print("fuck removed credit 😒😆")
-    
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
