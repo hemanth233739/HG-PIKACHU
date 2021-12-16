@@ -14,3 +14,9 @@ async def awake(event):
   PIKACHU += "**♡ Telethon Version : 1.23.0**\n\n"
   BUTTON = [[Button.url("𝐒𝐔𝐏𝐏𝐎𝐑𝐓🙂", "https://t.me/hgbotsupportgroup"), Button.url("𝐔𝐏𝐃𝐀𝐓𝐄", "https://t.me/hgbotsupdates")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
+
+
+
+
+
+__mod_name__ =❤️Alive
