@@ -88,7 +88,7 @@ PM_START_TEXT = """
 
 ┣ ₪ *Uptime:* {}
 ┣ ₪ {} *users, across* {} *chats.*
-  *THIS UPDTIME USERS WAS GIVEN BY @VALTAIOTHEBOT*
+  *THIS UPDTIME USERS WAS GIVEN BY @VALTAOITHEBOT*
 I am *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
