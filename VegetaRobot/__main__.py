@@ -82,13 +82,11 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
  ───『[⚡Ꭾɪᴋᴀᴄʜᴜ⚡](https://telegra.ph/file/71a86e38a0cfb06fb8c9b.jpg)』───
 
-
-
 *Hello! User,👋! {},*
 
 ┣ ₪ *Uptime:* {}
 ┣ ₪ {} *users, across* {} *chats.*
-  *THIS UPDTIME USERS WAS GIVEN BY @VALTAOITHEBOT*
+
 I am *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*
 ➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
 ┏━━━━━━━━━━━━━━━━━━━━━┓
