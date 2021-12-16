@@ -5,7 +5,7 @@ from sys import argv
 from typing import Optional
 import VegetaRobot.modules.sql.users_sql as sql
 
-playstore = "credits to TheTelegrampro don't rove else gey"
+Creadimt = "credits to TheTelegrampro don't rove else gey"
 
 from VegetaRobot import (
     ALLOW_EXCL,
