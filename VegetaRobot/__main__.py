@@ -5,7 +5,7 @@ from sys import argv
 from typing import Optional
 import VegetaRobot.modules.sql.users_sql as sql
 
-
+playstore = "credits to TheTelegrampro don't rove else gey"
 
 from VegetaRobot import (
     ALLOW_EXCL,
@@ -289,6 +289,13 @@ def error_handler(update, context):
     # Finally, send the message
     context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
 
+# for start module 
+if "TheTelegrampro" in playstore:
+       pass
+
+    else: 
+       await event.reply("fuck removed credit 😒😆")
+    text = str(event.pattern_match.group(1)).strip()
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
