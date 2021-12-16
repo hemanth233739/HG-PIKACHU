@@ -102,7 +102,7 @@ buttons = [
                        InlineKeyboardButton(text="🕊🇲 🇾 🇲 🇦 🇸 🇹 🇪 🇷 🕊", url="t.me/HEMANTHGAMING1K"),
                     ],
                    [
-                       InlineKeyboardButton(text="👻ʜᴇʟᴘ👻 ", url="t.me/HG_PICACHU_BOT?start=help"),
+                       InlineKeyboardButton(text="👻ʜᴇʟᴘ👻 ", url="t.me/HG_PIKACHU_BOT?start=help"),
                        InlineKeyboardButton(text="ᴍʏ  ғʀɪᴇɴᴅ🥳", url="t.me/HG_FREE_BOT"),
                        InlineKeyboardButton(text="❕ʟᴏɢs❕", url="t.me/hgbotslogs"),
                      ],
