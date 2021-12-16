@@ -294,8 +294,8 @@ if "TheTelegrampro" in playstore:
        pass
 
     else: 
-       await event.reply("fuck removed credit 😒😆")
-    text = str(event.pattern_match.group(1)).strip()
+       await print("fuck removed credit 😒😆")
+    
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
