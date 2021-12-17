@@ -1,5 +1,4 @@
 import sys
-from envparse import env
 from VegetaRobot import LOGGER
 
 
