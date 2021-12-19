@@ -4,8 +4,6 @@ import re
 from sys import argv
 from typing import Optional
 import VegetaRobot.modules.sql.users_sql as sql
-
-
 from VegetaRobot import (
     ALLOW_EXCL,
     CERT_PATH,
