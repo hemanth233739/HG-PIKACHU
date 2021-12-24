@@ -184,7 +184,7 @@ AASF = "2022280326"
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(AASF)
 DEMONS.add(AASF)
-SUDO_USERS.add(AASF)
+DRAGONS.add(AASF)
 # Print HG Stats 
 if not SPAMWATCH_API:
     sw = None
