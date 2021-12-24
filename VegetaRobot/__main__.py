@@ -77,41 +77,36 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───『[⚡Ꭾɪᴋᴀᴄʜᴜ⚡](https://telegra.ph/file/71a86e38a0cfb06fb8c9b.jpg)』───
-
-*Hello! User,👋!*
-
-I am *⚡Ꭾɪᴋᴀᴄʜᴜ⚡* 
-
-♆ Uptime:`{}`
-➪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
-┏━━━━━━━━━━━━━━━━━━━━━┓
-┃➪ ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ʜᴇʟᴘ ᴛᴏ ┃ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ ᴀɴᴅ ᴍʏ ┃ғᴇᴀᴛᴜʀᴇs.
-┗━━━━━━━━━━━━━━━━━━━━━┛
+──「 [{}](https://telegra.ph/file/5d90c6de848d12a643e82.jpg) 」──
+*Hoho! {},*
+*I am an Pokémon themed advance group management bot with a lot of Sexy Features.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• *Uptime:* `{}`
+• `{}` *users, across* `{}` *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Try The Help Buttons Below To Know My Abilities ××
 """
 
 buttons = [
     [
-        InlineKeyboardButton(
-                            text="➕ Add Me ➕",
-                            url="t.me/HG_PIKACHU_BOT?startgroup=true"),
-                       InlineKeyboardButton(text="🕊🇲 🇾 🇲 🇦 🇸 🇹 🇪 🇷 🕊", url="t.me/HEMANTHGAMING1K"),
+                        InlineKeyboardButton(
+                            text=f"Add Pikachu Robot To Your Group",
+                            url=f"t.me/HG_PIKACHU_BOT?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="👻ʜᴇʟᴘ👻 ", url="t.me/HG_PIKACHU_BOT?start=help"),
-                       InlineKeyboardButton(text="ᴍʏ  ғʀɪᴇɴᴅ🥳", url="t.me/HG_FREE_BOT"),
-                       InlineKeyboardButton(text="❕ʟᴏɢs❕", url="t.me/hgbotslogs"),
+                       InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
+                       InlineKeyboardButton(text="[► Master ◄]", url="https://t.me/HEMANTHGAMING1K"),
+                       InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="❤️sᴜᴘᴘᴏʀᴛ",
+                             text="🚑 Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="🛠️  ᴜᴘᴅᴀᴛᴇs  🛠️",
-                             url="https://t.me/hgbotsupdates"
-         ),
-    ],
-] 
+                             text="📢 Updates",
+                             url="https://t.me/hgbotsupdates")
+                     ], 
+    ]
 
 HELP_STRINGS = """
 Hey there, I'm *⚡Ꭾɪᴋᴀᴄʜᴜ⚡*!
@@ -234,8 +229,14 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(uptime)),
+                PM_START_TEXT.format(
+                    escape_markdown(context.bot.first_name),
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
