@@ -332,7 +332,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Powered by @HG_PIKACHU_BOT\nHere is the help for the *{}* module:\n".format(
+                "Powered by @HG\_PIKACHU\_BOT\nHere is the help for the *{}* module:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -400,6 +400,7 @@ def vegeta_data_callback(update, context):
             ),
         )
     elif query.data == "vegeta_back":
+        first_name = update.effective_user.first_name
         query.message.edit_text(
                 PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
