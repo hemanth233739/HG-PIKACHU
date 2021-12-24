@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ──「 [{}](https://telegra.ph/file/5d90c6de848d12a643e82.jpg) 」──
 *Hoho! {},*
-*I am an Pokémon themed advance group management bot with a lot of Sexy Features.*
+*I am Pokémon Themed Advance Group Management Bot With A Lot Of Powerful Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
