@@ -13,7 +13,7 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
 from VegetaRobot import DRAGONS
-from VegetaRobot import pgram
+from VegetaRobot import pbot
 from VegetaRobot.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
@@ -23,7 +23,7 @@ static_data_filter = filters.create(
 )
 
 
-@pgram.on_callback_query(static_data_filter)
+@pbot.on_callback_query(static_data_filter)
 def _onUnMuteRequest(client, cb):
     user_id = cb.from_user.id
     chat_id = cb.message.chat.id
@@ -69,7 +69,7 @@ def _onUnMuteRequest(client, cb):
                 )
 
 
-@pgram.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
+@pbot.on_message(filters.text & ~filters.private & ~filters.edited, group=1)
 def _check_member(client, message):
     chat_id = message.chat.id
     chat_db = sql.fs_settings(chat_id)
@@ -121,7 +121,7 @@ def _check_member(client, message):
                 )
 
 
-@pgram.on_message(filters.command(["forcesubscribe", "fsub"]) & ~filters.private)
+@pbot.on_message(filters.command(["forcesubscribe", "fsub"]) & ~filters.private)
 def config(client, message):
     user = client.get_chat_member(message.chat.id, message.from_user.id)
     if user.status is "creator" or user.user.id in DRAGONS:
