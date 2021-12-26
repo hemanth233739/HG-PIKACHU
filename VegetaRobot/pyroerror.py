@@ -1,7 +1,7 @@
 import sys
 import traceback
 from functools import wraps
-from VegetaRobot import pgram, LOG_GROUP_ID
+from VegetaRobot import pbot, LOG_GROUP_ID
 
 def split_limits(text):
     if len(text) < 2048:
@@ -40,7 +40,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await pgram.send_message(
+                await pbot.send_message(
                     LOG_GROUP_ID,
                     x
                 )
