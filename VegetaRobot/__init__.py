@@ -6,7 +6,9 @@ import spamwatch
 import telegram.ext as tg
 from redis import StrictRedis
 from pyrogram import Client, errors
+from Python_ARQ import ARQ
 
+from aiohttp import ClientSession
 from telethon import TelegramClient
 
 StartTime = time.time()
@@ -193,11 +195,14 @@ if not SPAMWATCH_API:
     LOGGER.warning("SpamWatch API key missing! recheck your config.")
 else:
     sw = spamwatch.Client(SPAMWATCH_API)
+    arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("KURUMIBOT", API_ID, API_HASH)
 pbot = Client("PikachuPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+aiohttpsession = ClientSession()
+arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
