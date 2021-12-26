@@ -52,7 +52,7 @@ from VegetaRobot.imgedit.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from VegetaRobot import pgram as Client
+from VegetaRobot import pbot as Client
 
 lel = 00000000
 # pylint:disable=import-error
