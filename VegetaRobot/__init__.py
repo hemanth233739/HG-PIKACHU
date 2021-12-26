@@ -214,10 +214,3 @@ from VegetaRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
-
-bottie = pbot.get_me()
-
-BOT_ID = bottie.id
-BOT_USERNAME = bottie.username
-BOT_NAME = bottie.first_name
-BOT_MENTION = bottie.mention
