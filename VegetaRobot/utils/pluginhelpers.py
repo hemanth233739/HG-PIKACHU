@@ -15,7 +15,7 @@ from pyrogram.types import Chat, Message, User
 
 from VegetaRobot import OWNER_ID, SUPPORT_CHAT
 from VegetaRobot.utils.errors import split_limits
-from VegetaRobot import pgram
+from VegetaRobot import pbot
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
@@ -329,7 +329,7 @@ def capture_err(func):
                 ),
             )
             for x in error_feedback:
-                await pgram.send_message(SUPPORT_CHAT, x)
+                await pbot.send_message(SUPPORT_CHAT, x)
             raise err
 
     return capture
@@ -340,7 +340,7 @@ def capture_err(func):
 
 async def member_permissions(chat_id, user_id):
     perms = []
-    member = await pgram.get_chat_member(chat_id, user_id)
+    member = await pbot.get_chat_member(chat_id, user_id)
     if member.can_post_messages:
         perms.append("can_post_messages")
     if member.can_edit_messages:
