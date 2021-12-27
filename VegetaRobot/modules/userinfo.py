@@ -224,9 +224,9 @@ def info(update: Update, context: CallbackContext):
         return
 
     rep = message.reply_text(
-        "<code>Connecting to Pegasus</code>", parse_mode=ParseMode.HTML)
+        "<code>Connecting to Pikachu</code>", parse_mode=ParseMode.HTML)
 
-    text = (f"╒═══「<b> Pegasus DB Userinfo:</b> 」\n"
+    text = (f"╒═══「<b> Pikachu Robot DB Userinfo:</b> 」\n"
             f"ID: <code>{user.id}</code>\n"
             f"First Name: {html.escape(user.first_name)}")
 
@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/pegasusxteam/36">What is Ranks</a>]'.format(
+        text += ' [<a href="https://t.me/hgbotsupdates">What is Ranks</a>]'.format(
             bot.username)
 
     try:
