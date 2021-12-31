@@ -63,6 +63,7 @@ urllib3
 heroku3
 telegraph
 youtube_search
+apscheduler
 search_engine_parser
 glitch_this
 NumPy
