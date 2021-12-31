@@ -74,7 +74,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Pikachu ⚡](https://t.me/HG_PIKACHU_BOT):**
+**[Pikachu ⚡](https://telegra.ph/file/5f05e229f52c3e739263b.jpg):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
