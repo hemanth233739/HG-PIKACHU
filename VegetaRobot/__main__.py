@@ -78,7 +78,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──「 [{}](https://telegra.ph/file/5d90c6de848d12a643e82.jpg) 」──
+──「 [{}](https://telegra.ph/file/3826249c04b05d85952e9.jpg) 」──
 *Hoho! {},*
 *I am Pokémon Themed Advance Group Management Bot With A Lot Of Powerful Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
