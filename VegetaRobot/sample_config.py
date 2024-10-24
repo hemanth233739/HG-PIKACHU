@@ -15,23 +15,23 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 2091894  # integer value, dont use ""
-    API_HASH = "925ce96bd585205d6dac1b35e8e26a12"
-    TOKEN = "1616584987:AAGiKBL-7Q4mihWH03AGtyBjfDNdp23zJVc"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 769830161 # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "CtzFamily"
-    SUPPORT_CHAT = 'Vegetasupport'  #Your own group for support, do not add the @
-    JOIN_LOGGER = -1360279453  #Prints any new group the bot is added to, prints just the name and ID.
-    EVENT_LOGS = -1360279453  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    API_ID = 8577898  # integer value, dont use ""
+    API_HASH = "8663682496c76b1240e4b7e527577dad"
+    TOKEN = "8015802038:AAE3Xqpkr5YsviVXek6PL-h3uWcJpYGN5-8"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 7074356361 # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "hemanthgaming_1k"
+    SUPPORT_CHAT = 'hgbotsupportgroup'  #Your own group for support, do not add the @
+    JOIN_LOGGER = -1002302930285  #Prints any new group the bot is added to, prints just the name and ID.
+    EVENT_LOGS = -1002302930285  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://mcclbjwx:CqMrbec47cqL5KbaZOUDlVQWOscjNcKR@peanut.db.elephantsql.com/mcclbjwx'  # needed for any database modules
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = "6np2fqRKM2ssh~rKKyy0U1rvq4H8dWtU9EYomFeaev5OZDcdn0nxwyOKASalsDWO"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
     #OPTIONAL
